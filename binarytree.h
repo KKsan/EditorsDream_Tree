@@ -47,7 +47,7 @@ private:
     node<T>* copyNode(node<T>* other);//makes a pointer copy of a node
     int findParent(T d);
     int findLeftMost(int c = 0);//make sure parameter c exists
-    int findRightMost(int c = 0);//make sure paramter c exists
+    int findRightMost(int c = 0);//make sure parameter c exists
     void moveSub(int oldRoot, int newRoot);//moveSubtree
     void promote(int c);//promotes whole subtree up
     void demote(int oldRoot, int newRoot);//same as moveSub but starts moving from bottom
@@ -352,7 +352,7 @@ int binaryTree<T>::findRightMost(int c)
     return c;
 }
 
-//for the for loop the statement is checks is that the node being moved is always less than the largest node()
+//the for loop the statement checks that the node being moved is always less than the largest node()
 template<typename T>
 void binaryTree<T>::moveSub(int oldRoot, int newRoot)
 {
